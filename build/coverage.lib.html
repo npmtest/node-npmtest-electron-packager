@@ -1,5 +1,7 @@
-<html lang="en"><head>
-    <title>Code coverage report for node-npmtest-electron-packager/electron-packager/common.js</title>
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for node-npmtest-electron-packager/node_modules/electron-packager/common.js</title>
     <meta charset="utf-8">
     <style>
         body, html {
@@ -192,7 +194,7 @@
     <h1 style="font-weight: bold;">
         <a href="https://github.com/npmtest/node-npmtest-electron-packager">npmtest-electron-packager (v0.0.1)</a>
     </h1>
-    <h1>Code coverage report for <span class="entity">node-npmtest-electron-packager/electron-packager/common.js</span></h1>
+    <h1>Code coverage report for <span class="entity">node-npmtest-electron-packager/node_modules/electron-packager/common.js</span></h1>
     <h2>
         
         Statements: <span class="metric">17.31% <small>(27 / 156)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
@@ -208,11 +210,11 @@
         
         Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
     </h2>
-    <div class="path"><a href="../../index.html">All files</a> » <a href="index.html">node-npmtest-electron-packager/electron-packager/</a> » common.js</div>
+    <div class="path"><a href="../../../index.html">All files</a> &#187; <a href="index.html">node-npmtest-electron-packager/node_modules/electron-packager/</a> &#187; common.js</div>
 </div>
 <div class="body">
 <pre><table class="coverage">
-<tbody><tr><td class="line-count">1
+<tr><td class="line-count">1
 2
 3
 4
@@ -938,8 +940,8 @@ const series = require('run-series')
 const archs = ['ia32', 'x64', 'armv7l']
 const platforms = ['darwin', 'linux', 'mas', 'win32']
 &nbsp;
-<span class="fstat-no" title="function not covered">function parseCLIArgs (argv) {</span>
-<span class="cstat-no" title="statement not covered">  var args = minimist(argv, {</span>
+<span class="fstat-no" title="function not covered" >function parseCLIArgs (argv) {</span>
+<span class="cstat-no" title="statement not covered" >  var args = minimist(argv, {</span>
     boolean: [
       'all',
       'deref-symlinks',
@@ -959,120 +961,120 @@ const platforms = ['darwin', 'linux', 'mas', 'win32']
     ]
   })
 &nbsp;
-<span class="cstat-no" title="statement not covered">  args.dir = args._[0]</span>
-<span class="cstat-no" title="statement not covered">  args.name = args._[1]</span>
+<span class="cstat-no" title="statement not covered" >  args.dir = args._[0]</span>
+<span class="cstat-no" title="statement not covered" >  args.name = args._[1]</span>
 &nbsp;
   // Transform hyphenated keys into camelCase
-<span class="cstat-no" title="statement not covered">  module.exports.camelCase(args, false)</span>
+<span class="cstat-no" title="statement not covered" >  module.exports.camelCase(args, false)</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">  var protocolSchemes = [].concat(args.protocol || [])</span>
-<span class="cstat-no" title="statement not covered">  var protocolNames = [].concat(args.protocolName || [])</span>
+<span class="cstat-no" title="statement not covered" >  var protocolSchemes = [].concat(args.protocol || [])</span>
+<span class="cstat-no" title="statement not covered" >  var protocolNames = [].concat(args.protocolName || [])</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">  if (protocolSchemes &amp;&amp; protocolNames &amp;&amp; protocolNames.length === protocolSchemes.length) {</span>
-<span class="cstat-no" title="statement not covered">    args.protocols = protocolSchemes.map(<span class="fstat-no" title="function not covered">function (scheme, i) {</span></span>
-<span class="cstat-no" title="statement not covered">      return {schemes: [scheme], name: protocolNames[i]}</span>
+<span class="cstat-no" title="statement not covered" >  if (protocolSchemes &amp;&amp; protocolNames &amp;&amp; protocolNames.length === protocolSchemes.length) {</span>
+<span class="cstat-no" title="statement not covered" >    args.protocols = protocolSchemes.map(<span class="fstat-no" title="function not covered" >function (scheme, i) {</span></span>
+<span class="cstat-no" title="statement not covered" >      return {schemes: [scheme], name: protocolNames[i]}</span>
     })
   }
 &nbsp;
-<span class="cstat-no" title="statement not covered">  if (args.out === '') {</span>
-<span class="cstat-no" title="statement not covered">    args.out = null</span>
+<span class="cstat-no" title="statement not covered" >  if (args.out === '') {</span>
+<span class="cstat-no" title="statement not covered" >    args.out = null</span>
   }
 &nbsp;
   // Overrides for multi-typed arguments, because minimist doesn't support it
 &nbsp;
   // asar: `Object` or `true`
-<span class="cstat-no" title="statement not covered">  if (args.asar === 'true' || args.asar instanceof Array) {</span>
-<span class="cstat-no" title="statement not covered">    args.asar = true</span>
+<span class="cstat-no" title="statement not covered" >  if (args.asar === 'true' || args.asar instanceof Array) {</span>
+<span class="cstat-no" title="statement not covered" >    args.asar = true</span>
   }
 &nbsp;
   // osx-sign: `Object` or `true`
-<span class="cstat-no" title="statement not covered">  if (args.osxSign === 'true') {</span>
-<span class="cstat-no" title="statement not covered">    args.osxSign = true</span>
+<span class="cstat-no" title="statement not covered" >  if (args.osxSign === 'true') {</span>
+<span class="cstat-no" title="statement not covered" >    args.osxSign = true</span>
   }
 &nbsp;
   // tmpdir: `String` or `false`
-<span class="cstat-no" title="statement not covered">  if (args.tmpdir === 'false') {</span>
-<span class="cstat-no" title="statement not covered">    args.tmpdir = false</span>
+<span class="cstat-no" title="statement not covered" >  if (args.tmpdir === 'false') {</span>
+<span class="cstat-no" title="statement not covered" >    args.tmpdir = false</span>
   }
 &nbsp;
-<span class="cstat-no" title="statement not covered">  return args</span>
+<span class="cstat-no" title="statement not covered" >  return args</span>
 }
 &nbsp;
-<span class="fstat-no" title="function not covered">function asarApp (appPath, asarOptions, cb) {</span>
-<span class="cstat-no" title="statement not covered">  var dest = path.join(appPath, '..', 'app.asar')</span>
-<span class="cstat-no" title="statement not covered">  debug(`Running asar with the options ${JSON.stringify(asarOptions)}`)</span>
-<span class="cstat-no" title="statement not covered">  asar.createPackageWithOptions(appPath, dest, asarOptions, <span class="fstat-no" title="function not covered">function (err) {</span></span>
-<span class="cstat-no" title="statement not covered">    if (err) <span class="cstat-no" title="statement not covered">return cb(err)</span></span>
-<span class="cstat-no" title="statement not covered">    fs.remove(appPath, <span class="fstat-no" title="function not covered">function (err) {</span></span>
-<span class="cstat-no" title="statement not covered">      if (err) <span class="cstat-no" title="statement not covered">return cb(err)</span></span>
-<span class="cstat-no" title="statement not covered">      cb(null, dest)</span>
+<span class="fstat-no" title="function not covered" >function asarApp (appPath, asarOptions, cb) {</span>
+<span class="cstat-no" title="statement not covered" >  var dest = path.join(appPath, '..', 'app.asar')</span>
+<span class="cstat-no" title="statement not covered" >  debug(`Running asar with the options ${JSON.stringify(asarOptions)}`)</span>
+<span class="cstat-no" title="statement not covered" >  asar.createPackageWithOptions(appPath, dest, asarOptions, <span class="fstat-no" title="function not covered" >function (err) {</span></span>
+<span class="cstat-no" title="statement not covered" >    if (err) <span class="cstat-no" title="statement not covered" >return cb(err)</span></span>
+<span class="cstat-no" title="statement not covered" >    fs.remove(appPath, <span class="fstat-no" title="function not covered" >function (err) {</span></span>
+<span class="cstat-no" title="statement not covered" >      if (err) <span class="cstat-no" title="statement not covered" >return cb(err)</span></span>
+<span class="cstat-no" title="statement not covered" >      cb(null, dest)</span>
     })
   })
 }
 &nbsp;
-<span class="fstat-no" title="function not covered">function isPlatformMac (platform) {</span>
-<span class="cstat-no" title="statement not covered">  return platform === 'darwin' || platform === 'mas'</span>
+<span class="fstat-no" title="function not covered" >function isPlatformMac (platform) {</span>
+<span class="cstat-no" title="statement not covered" >  return platform === 'darwin' || platform === 'mas'</span>
 }
 &nbsp;
-<span class="fstat-no" title="function not covered">function sanitizeAppName (name) {</span>
-<span class="cstat-no" title="statement not covered">  return sanitize(name, {replacement: '-'})</span>
+<span class="fstat-no" title="function not covered" >function sanitizeAppName (name) {</span>
+<span class="cstat-no" title="statement not covered" >  return sanitize(name, {replacement: '-'})</span>
 }
 &nbsp;
-<span class="fstat-no" title="function not covered">function generateFinalBasename (opts) {</span>
-<span class="cstat-no" title="statement not covered">  return `${sanitizeAppName(opts.name)}-${opts.platform}-${opts.arch}`</span>
+<span class="fstat-no" title="function not covered" >function generateFinalBasename (opts) {</span>
+<span class="cstat-no" title="statement not covered" >  return `${sanitizeAppName(opts.name)}-${opts.platform}-${opts.arch}`</span>
 }
 &nbsp;
-<span class="fstat-no" title="function not covered">function generateFinalPath (opts) {</span>
-<span class="cstat-no" title="statement not covered">  return path.join(opts.out || process.cwd(), generateFinalBasename(opts))</span>
+<span class="fstat-no" title="function not covered" >function generateFinalPath (opts) {</span>
+<span class="cstat-no" title="statement not covered" >  return path.join(opts.out || process.cwd(), generateFinalBasename(opts))</span>
 }
 &nbsp;
-<span class="fstat-no" title="function not covered">function info (message, quiet) {</span>
-<span class="cstat-no" title="statement not covered">  if (!quiet) {</span>
-<span class="cstat-no" title="statement not covered">    console.error(message)</span>
+<span class="fstat-no" title="function not covered" >function info (message, quiet) {</span>
+<span class="cstat-no" title="statement not covered" >  if (!quiet) {</span>
+<span class="cstat-no" title="statement not covered" >    console.error(message)</span>
   }
 }
 &nbsp;
-<span class="fstat-no" title="function not covered">function warning (message, quiet) {</span>
-<span class="cstat-no" title="statement not covered">  if (!quiet) {</span>
-<span class="cstat-no" title="statement not covered">    console.warn(`WARNING: ${message}`)</span>
+<span class="fstat-no" title="function not covered" >function warning (message, quiet) {</span>
+<span class="cstat-no" title="statement not covered" >  if (!quiet) {</span>
+<span class="cstat-no" title="statement not covered" >    console.warn(`WARNING: ${message}`)</span>
   }
 }
 &nbsp;
-<span class="fstat-no" title="function not covered">function subOptionWarning (properties, optionName, parameter, value, quiet) {</span>
-<span class="cstat-no" title="statement not covered">  if (properties.hasOwnProperty(parameter)) {</span>
-<span class="cstat-no" title="statement not covered">    warning(`${optionName}.${parameter} will be inferred from the main options`, quiet)</span>
+<span class="fstat-no" title="function not covered" >function subOptionWarning (properties, optionName, parameter, value, quiet) {</span>
+<span class="cstat-no" title="statement not covered" >  if (properties.hasOwnProperty(parameter)) {</span>
+<span class="cstat-no" title="statement not covered" >    warning(`${optionName}.${parameter} will be inferred from the main options`, quiet)</span>
   }
-<span class="cstat-no" title="statement not covered">  properties[parameter] = value</span>
+<span class="cstat-no" title="statement not covered" >  properties[parameter] = value</span>
 }
 &nbsp;
-<span class="fstat-no" title="function not covered">function baseTempDir (opts) {</span>
-<span class="cstat-no" title="statement not covered">  return path.join(opts.tmpdir || os.tmpdir(), 'electron-packager')</span>
+<span class="fstat-no" title="function not covered" >function baseTempDir (opts) {</span>
+<span class="cstat-no" title="statement not covered" >  return path.join(opts.tmpdir || os.tmpdir(), 'electron-packager')</span>
 }
 &nbsp;
-<span class="fstat-no" title="function not covered">function createAsarOpts (opts) {</span>
-<span class="cstat-no" title="statement not covered">  let asarOptions</span>
-<span class="cstat-no" title="statement not covered">  if (opts.asar === true) {</span>
-<span class="cstat-no" title="statement not covered">    asarOptions = {}</span>
-  } else <span class="cstat-no" title="statement not covered">if (typeof opts.asar === 'object') {</span>
-<span class="cstat-no" title="statement not covered">    asarOptions = opts.asar</span>
-  } else <span class="cstat-no" title="statement not covered">if (opts.asar === false || opts.asar === undefined) {</span>
-<span class="cstat-no" title="statement not covered">    return false</span>
+<span class="fstat-no" title="function not covered" >function createAsarOpts (opts) {</span>
+<span class="cstat-no" title="statement not covered" >  let asarOptions</span>
+<span class="cstat-no" title="statement not covered" >  if (opts.asar === true) {</span>
+<span class="cstat-no" title="statement not covered" >    asarOptions = {}</span>
+  } else <span class="cstat-no" title="statement not covered" >if (typeof opts.asar === 'object') {</span>
+<span class="cstat-no" title="statement not covered" >    asarOptions = opts.asar</span>
+  } else <span class="cstat-no" title="statement not covered" >if (opts.asar === false || opts.asar === undefined) {</span>
+<span class="cstat-no" title="statement not covered" >    return false</span>
   } else {
-<span class="cstat-no" title="statement not covered">    warning(`asar parameter set to an invalid value (${opts.asar}), ignoring and disabling asar`)</span>
-<span class="cstat-no" title="statement not covered">    return false</span>
+<span class="cstat-no" title="statement not covered" >    warning(`asar parameter set to an invalid value (${opts.asar}), ignoring and disabling asar`)</span>
+<span class="cstat-no" title="statement not covered" >    return false</span>
   }
 &nbsp;
-<span class="cstat-no" title="statement not covered">  return asarOptions</span>
+<span class="cstat-no" title="statement not covered" >  return asarOptions</span>
 }
 &nbsp;
-<span class="fstat-no" title="function not covered">function createDownloadOpts (opts, platform, arch) {</span>
-<span class="cstat-no" title="statement not covered">  let downloadOpts = Object.assign({}, opts.download)</span>
+<span class="fstat-no" title="function not covered" >function createDownloadOpts (opts, platform, arch) {</span>
+<span class="cstat-no" title="statement not covered" >  let downloadOpts = Object.assign({}, opts.download)</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">  subOptionWarning(downloadOpts, 'download', 'platform', platform, opts.quiet)</span>
-<span class="cstat-no" title="statement not covered">  subOptionWarning(downloadOpts, 'download', 'arch', arch, opts.quiet)</span>
-<span class="cstat-no" title="statement not covered">  subOptionWarning(downloadOpts, 'download', 'version', opts.electronVersion, opts.quiet)</span>
+<span class="cstat-no" title="statement not covered" >  subOptionWarning(downloadOpts, 'download', 'platform', platform, opts.quiet)</span>
+<span class="cstat-no" title="statement not covered" >  subOptionWarning(downloadOpts, 'download', 'arch', arch, opts.quiet)</span>
+<span class="cstat-no" title="statement not covered" >  subOptionWarning(downloadOpts, 'download', 'version', opts.electronVersion, opts.quiet)</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">  return downloadOpts</span>
+<span class="cstat-no" title="statement not covered" >  return downloadOpts</span>
 }
 &nbsp;
 module.exports = {
@@ -1089,29 +1091,29 @@ module.exports = {
 &nbsp;
   createAsarOpts: createAsarOpts,
   createDownloadOpts: createDownloadOpts,
-  createDownloadCombos: <span class="fstat-no" title="function not covered">function createDownloadCombos (opts, selectedPlatforms, selectedArchs, ignoreFunc) {</span>
-<span class="cstat-no" title="statement not covered">    let combinations = []</span>
-<span class="cstat-no" title="statement not covered">    for (let arch of selectedArchs) {</span>
-<span class="cstat-no" title="statement not covered">      for (let platform of selectedPlatforms) {</span>
+  createDownloadCombos: <span class="fstat-no" title="function not covered" >function createDownloadCombos (opts, selectedPlatforms, selectedArchs, ignoreFunc) {</span>
+<span class="cstat-no" title="statement not covered" >    let combinations = []</span>
+<span class="cstat-no" title="statement not covered" >    for (let arch of selectedArchs) {</span>
+<span class="cstat-no" title="statement not covered" >      for (let platform of selectedPlatforms) {</span>
         // Electron does not have 32-bit releases for Mac OS X, so skip that combination
-<span class="cstat-no" title="statement not covered">        if (isPlatformMac(platform) &amp;&amp; arch === 'ia32') <span class="cstat-no" title="statement not covered">continue</span></span>
+<span class="cstat-no" title="statement not covered" >        if (isPlatformMac(platform) &amp;&amp; arch === 'ia32') <span class="cstat-no" title="statement not covered" >continue</span></span>
         // Electron only has armv7l releases for Linux
-<span class="cstat-no" title="statement not covered">        if (arch === 'armv7l' &amp;&amp; platform !== 'linux') <span class="cstat-no" title="statement not covered">continue</span></span>
-<span class="cstat-no" title="statement not covered">        if (typeof ignoreFunc === 'function' &amp;&amp; ignoreFunc(platform, arch)) <span class="cstat-no" title="statement not covered">continue</span></span>
-<span class="cstat-no" title="statement not covered">        combinations.push(createDownloadOpts(opts, platform, arch))</span>
+<span class="cstat-no" title="statement not covered" >        if (arch === 'armv7l' &amp;&amp; platform !== 'linux') <span class="cstat-no" title="statement not covered" >continue</span></span>
+<span class="cstat-no" title="statement not covered" >        if (typeof ignoreFunc === 'function' &amp;&amp; ignoreFunc(platform, arch)) <span class="cstat-no" title="statement not covered" >continue</span></span>
+<span class="cstat-no" title="statement not covered" >        combinations.push(createDownloadOpts(opts, platform, arch))</span>
       }
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered">    return combinations</span>
+<span class="cstat-no" title="statement not covered" >    return combinations</span>
   },
 &nbsp;
-  deprecatedParameter: <span class="fstat-no" title="function not covered">function deprecatedParameter (properties, oldName, newName, newCLIName) {</span>
-<span class="cstat-no" title="statement not covered">    if (properties.hasOwnProperty(oldName)) {</span>
-<span class="cstat-no" title="statement not covered">      warning(`The ${oldName} parameter is deprecated, use ${newName} (or --${newCLIName} in the CLI) instead`)</span>
-<span class="cstat-no" title="statement not covered">      if (!properties.hasOwnProperty(newName)) {</span>
-<span class="cstat-no" title="statement not covered">        properties[newName] = properties[oldName]</span>
+  deprecatedParameter: <span class="fstat-no" title="function not covered" >function deprecatedParameter (properties, oldName, newName, newCLIName) {</span>
+<span class="cstat-no" title="statement not covered" >    if (properties.hasOwnProperty(oldName)) {</span>
+<span class="cstat-no" title="statement not covered" >      warning(`The ${oldName} parameter is deprecated, use ${newName} (or --${newCLIName} in the CLI) instead`)</span>
+<span class="cstat-no" title="statement not covered" >      if (!properties.hasOwnProperty(newName)) {</span>
+<span class="cstat-no" title="statement not covered" >        properties[newName] = properties[oldName]</span>
       }
-<span class="cstat-no" title="statement not covered">      delete properties[oldName]</span>
+<span class="cstat-no" title="statement not covered" >      delete properties[oldName]</span>
     }
   },
 &nbsp;
@@ -1129,29 +1131,29 @@ module.exports = {
     'protocol-name': 'protocolName'
   },
 &nbsp;
-  camelCase: <span class="fstat-no" title="function not covered">function camelCase (properties, warn) {</span>
-<span class="cstat-no" title="statement not covered">    Object.keys(module.exports.kebabProperties).forEach(<span class="fstat-no" title="function not covered">function (key) {</span></span>
-<span class="cstat-no" title="statement not covered">      var value = module.exports.kebabProperties[key]</span>
-<span class="cstat-no" title="statement not covered">      if (properties.hasOwnProperty(key)) {</span>
-<span class="cstat-no" title="statement not covered">        if (warn) {</span>
-<span class="cstat-no" title="statement not covered">          warning(`The ${key} parameter is deprecated when used from JS, use ${value} instead. It will be removed in the next major version.`)</span>
+  camelCase: <span class="fstat-no" title="function not covered" >function camelCase (properties, warn) {</span>
+<span class="cstat-no" title="statement not covered" >    Object.keys(module.exports.kebabProperties).forEach(<span class="fstat-no" title="function not covered" >function (key) {</span></span>
+<span class="cstat-no" title="statement not covered" >      var value = module.exports.kebabProperties[key]</span>
+<span class="cstat-no" title="statement not covered" >      if (properties.hasOwnProperty(key)) {</span>
+<span class="cstat-no" title="statement not covered" >        if (warn) {</span>
+<span class="cstat-no" title="statement not covered" >          warning(`The ${key} parameter is deprecated when used from JS, use ${value} instead. It will be removed in the next major version.`)</span>
         }
-<span class="cstat-no" title="statement not covered">        if (!properties.hasOwnProperty(value)) {</span>
-<span class="cstat-no" title="statement not covered">          properties[value] = properties[key]</span>
+<span class="cstat-no" title="statement not covered" >        if (!properties.hasOwnProperty(value)) {</span>
+<span class="cstat-no" title="statement not covered" >          properties[value] = properties[key]</span>
         }
-<span class="cstat-no" title="statement not covered">        delete properties[key]</span>
+<span class="cstat-no" title="statement not covered" >        delete properties[key]</span>
       }
     })
   },
 &nbsp;
-  downloadElectronZip: <span class="fstat-no" title="function not covered">function downloadElectronZip (downloadOpts, cb) {</span>
+  downloadElectronZip: <span class="fstat-no" title="function not covered" >function downloadElectronZip (downloadOpts, cb) {</span>
     // armv7l builds have only been backfilled for Electron &gt;= 1.0.0.
     // See: https://github.com/electron/electron/pull/6986
-<span class="cstat-no" title="statement not covered">    if (downloadOpts.arch === 'armv7l' &amp;&amp; semver.lt(downloadOpts.version, '1.0.0')) {</span>
-<span class="cstat-no" title="statement not covered">      downloadOpts.arch = 'arm'</span>
+<span class="cstat-no" title="statement not covered" >    if (downloadOpts.arch === 'armv7l' &amp;&amp; semver.lt(downloadOpts.version, '1.0.0')) {</span>
+<span class="cstat-no" title="statement not covered" >      downloadOpts.arch = 'arm'</span>
     }
-<span class="cstat-no" title="statement not covered">    debug(`Downloading Electron with options ${JSON.stringify(downloadOpts)}`)</span>
-<span class="cstat-no" title="statement not covered">    download(downloadOpts, cb)</span>
+<span class="cstat-no" title="statement not covered" >    debug(`Downloading Electron with options ${JSON.stringify(downloadOpts)}`)</span>
+<span class="cstat-no" title="statement not covered" >    download(downloadOpts, cb)</span>
   },
 &nbsp;
   generateFinalBasename: generateFinalBasename,
@@ -1159,7 +1161,7 @@ module.exports = {
 &nbsp;
   info: info,
 &nbsp;
-  initializeApp: <span class="fstat-no" title="function not covered">function initializeApp (opts, templatePath, appRelativePath, callback) {</span>
+  initializeApp: <span class="fstat-no" title="function not covered" >function initializeApp (opts, templatePath, appRelativePath, callback) {</span>
     // Performs the following initial operations for an app:
     // * Creates temporary directory
     // * Copies template into temporary directory
@@ -1167,119 +1169,118 @@ module.exports = {
     // * Prunes non-production node_modules (if opts.prune is either truthy or undefined)
     // * Creates an asar (if opts.asar is set)
 &nbsp;
-<span class="cstat-no" title="statement not covered">    var tempPath</span>
-<span class="cstat-no" title="statement not covered">    if (opts.tmpdir === false) {</span>
-<span class="cstat-no" title="statement not covered">      tempPath = generateFinalPath(opts)</span>
+<span class="cstat-no" title="statement not covered" >    var tempPath</span>
+<span class="cstat-no" title="statement not covered" >    if (opts.tmpdir === false) {</span>
+<span class="cstat-no" title="statement not covered" >      tempPath = generateFinalPath(opts)</span>
     } else {
-<span class="cstat-no" title="statement not covered">      tempPath = path.join(baseTempDir(opts), `${opts.platform}-${opts.arch}`, generateFinalBasename(opts))</span>
+<span class="cstat-no" title="statement not covered" >      tempPath = path.join(baseTempDir(opts), `${opts.platform}-${opts.arch}`, generateFinalBasename(opts))</span>
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered">    debug(`Initializing app in ${tempPath} from ${templatePath} template`)</span>
+<span class="cstat-no" title="statement not covered" >    debug(`Initializing app in ${tempPath} from ${templatePath} template`)</span>
 &nbsp;
     // Path to `app` directory
-<span class="cstat-no" title="statement not covered">    var appPath = path.join(tempPath, appRelativePath)</span>
-<span class="cstat-no" title="statement not covered">    var resourcesPath = path.resolve(appPath, '..')</span>
+<span class="cstat-no" title="statement not covered" >    var appPath = path.join(tempPath, appRelativePath)</span>
+<span class="cstat-no" title="statement not covered" >    var resourcesPath = path.resolve(appPath, '..')</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">    var operations = [</span>
-<span class="fstat-no" title="function not covered">      function (cb) {</span>
-<span class="cstat-no" title="statement not covered">        fs.move(templatePath, tempPath, {clobber: true}, cb)</span>
+<span class="cstat-no" title="statement not covered" >    var operations = [</span>
+<span class="fstat-no" title="function not covered" >      function (cb) {</span>
+<span class="cstat-no" title="statement not covered" >        fs.move(templatePath, tempPath, {clobber: true}, cb)</span>
       },
-<span class="fstat-no" title="function not covered">      function (cb) {</span>
+<span class="fstat-no" title="function not covered" >      function (cb) {</span>
         // `deref-symlinks` is the default value so we'll use it unless
         // `derefSymlinks` is defined.
-<span class="cstat-no" title="statement not covered">        var shouldDeref = opts['deref-symlinks']</span>
-<span class="cstat-no" title="statement not covered">        if (opts.derefSymlinks !== undefined) {</span>
-<span class="cstat-no" title="statement not covered">          shouldDeref = opts.derefSymlinks</span>
+<span class="cstat-no" title="statement not covered" >        var shouldDeref = opts['deref-symlinks']</span>
+<span class="cstat-no" title="statement not covered" >        if (opts.derefSymlinks !== undefined) {</span>
+<span class="cstat-no" title="statement not covered" >          shouldDeref = opts.derefSymlinks</span>
         }
 &nbsp;
-<span class="cstat-no" title="statement not covered">        fs.copy(opts.dir, appPath, {filter: ignore.userIgnoreFilter(opts), dereference: shouldDeref}, cb)</span>
+<span class="cstat-no" title="statement not covered" >        fs.copy(opts.dir, appPath, {filter: ignore.userIgnoreFilter(opts), dereference: shouldDeref}, cb)</span>
       },
-<span class="fstat-no" title="function not covered">      function (cb) {</span>
-<span class="cstat-no" title="statement not covered">        var afterCopyHooks = (opts.afterCopy || []).map(<span class="fstat-no" title="function not covered">function (afterCopyFn) {</span></span>
-<span class="cstat-no" title="statement not covered">          return <span class="fstat-no" title="function not covered">function (cb) {</span></span>
-<span class="cstat-no" title="statement not covered">            afterCopyFn(appPath, opts.electronVersion, opts.platform, opts.arch, cb)</span>
+<span class="fstat-no" title="function not covered" >      function (cb) {</span>
+<span class="cstat-no" title="statement not covered" >        var afterCopyHooks = (opts.afterCopy || []).map(<span class="fstat-no" title="function not covered" >function (afterCopyFn) {</span></span>
+<span class="cstat-no" title="statement not covered" >          return <span class="fstat-no" title="function not covered" >function (cb) {</span></span>
+<span class="cstat-no" title="statement not covered" >            afterCopyFn(appPath, opts.electronVersion, opts.platform, opts.arch, cb)</span>
           }
         })
-<span class="cstat-no" title="statement not covered">        series(afterCopyHooks, cb)</span>
+<span class="cstat-no" title="statement not covered" >        series(afterCopyHooks, cb)</span>
       },
-<span class="fstat-no" title="function not covered">      function (cb) {</span>
+<span class="fstat-no" title="function not covered" >      function (cb) {</span>
         // Support removing old default_app folder that is now an asar archive
-<span class="cstat-no" title="statement not covered">        fs.remove(path.join(resourcesPath, 'default_app'), cb)</span>
+<span class="cstat-no" title="statement not covered" >        fs.remove(path.join(resourcesPath, 'default_app'), cb)</span>
       },
-<span class="fstat-no" title="function not covered">      function (cb) {</span>
-<span class="cstat-no" title="statement not covered">        fs.remove(path.join(resourcesPath, 'default_app.asar'), cb)</span>
+<span class="fstat-no" title="function not covered" >      function (cb) {</span>
+<span class="cstat-no" title="statement not covered" >        fs.remove(path.join(resourcesPath, 'default_app.asar'), cb)</span>
       }
     ]
 &nbsp;
     // Prune and asar are now performed before platform-specific logic, primarily so that
     // appPath is predictable (e.g. before .app is renamed for mac)
-<span class="cstat-no" title="statement not covered">    if (opts.prune || opts.prune === undefined) {</span>
-<span class="cstat-no" title="statement not covered">      operations.push(<span class="fstat-no" title="function not covered">function (cb) {</span></span>
-<span class="cstat-no" title="statement not covered">        debug('Running npm prune --production')</span>
-<span class="cstat-no" title="statement not covered">        child.exec('npm prune --production', {cwd: appPath}, cb)</span>
+<span class="cstat-no" title="statement not covered" >    if (opts.prune || opts.prune === undefined) {</span>
+<span class="cstat-no" title="statement not covered" >      operations.push(<span class="fstat-no" title="function not covered" >function (cb) {</span></span>
+<span class="cstat-no" title="statement not covered" >        debug('Running npm prune --production')</span>
+<span class="cstat-no" title="statement not covered" >        child.exec('npm prune --production', {cwd: appPath}, cb)</span>
       })
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered">    let asarOptions = createAsarOpts(opts)</span>
-<span class="cstat-no" title="statement not covered">    if (asarOptions) {</span>
-<span class="cstat-no" title="statement not covered">      operations.push(<span class="fstat-no" title="function not covered">function (cb) {</span></span>
-<span class="cstat-no" title="statement not covered">        asarApp(appPath, asarOptions, cb)</span>
+<span class="cstat-no" title="statement not covered" >    let asarOptions = createAsarOpts(opts)</span>
+<span class="cstat-no" title="statement not covered" >    if (asarOptions) {</span>
+<span class="cstat-no" title="statement not covered" >      operations.push(<span class="fstat-no" title="function not covered" >function (cb) {</span></span>
+<span class="cstat-no" title="statement not covered" >        asarApp(appPath, asarOptions, cb)</span>
       })
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered">    series(operations, <span class="fstat-no" title="function not covered">function (err) {</span></span>
-<span class="cstat-no" title="statement not covered">      if (err) <span class="cstat-no" title="statement not covered">return callback(err)</span></span>
+<span class="cstat-no" title="statement not covered" >    series(operations, <span class="fstat-no" title="function not covered" >function (err) {</span></span>
+<span class="cstat-no" title="statement not covered" >      if (err) <span class="cstat-no" title="statement not covered" >return callback(err)</span></span>
       // Resolve to path to temporary app folder for platform-specific processes to use
-<span class="cstat-no" title="statement not covered">      callback(null, tempPath)</span>
+<span class="cstat-no" title="statement not covered" >      callback(null, tempPath)</span>
     })
   },
 &nbsp;
-  moveApp: <span class="fstat-no" title="function not covered">function finalizeApp (opts, tempPath, callback) {</span>
-<span class="cstat-no" title="statement not covered">    var finalPath = generateFinalPath(opts)</span>
+  moveApp: <span class="fstat-no" title="function not covered" >function finalizeApp (opts, tempPath, callback) {</span>
+<span class="cstat-no" title="statement not covered" >    var finalPath = generateFinalPath(opts)</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">    if (opts.tmpdir === false) {</span>
-<span class="cstat-no" title="statement not covered">      callback(null, finalPath)</span>
-<span class="cstat-no" title="statement not covered">      return</span>
+<span class="cstat-no" title="statement not covered" >    if (opts.tmpdir === false) {</span>
+<span class="cstat-no" title="statement not covered" >      callback(null, finalPath)</span>
+<span class="cstat-no" title="statement not covered" >      return</span>
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered">    debug(`Moving ${tempPath} to ${finalPath}`)</span>
-<span class="cstat-no" title="statement not covered">    fs.move(tempPath, finalPath, <span class="fstat-no" title="function not covered">function (err) {</span></span>
-<span class="cstat-no" title="statement not covered">      callback(err, finalPath)</span>
+<span class="cstat-no" title="statement not covered" >    debug(`Moving ${tempPath} to ${finalPath}`)</span>
+<span class="cstat-no" title="statement not covered" >    fs.move(tempPath, finalPath, <span class="fstat-no" title="function not covered" >function (err) {</span></span>
+<span class="cstat-no" title="statement not covered" >      callback(err, finalPath)</span>
     })
   },
 &nbsp;
-  normalizeExt: <span class="fstat-no" title="function not covered">function normalizeExt (filename, targetExt, cb) {</span>
+  normalizeExt: <span class="fstat-no" title="function not covered" >function normalizeExt (filename, targetExt, cb) {</span>
     // Forces a filename to a given extension and fires the given callback with the normalized filename,
     // if it exists.  Otherwise reports the error from the fs.stat call.
     // (Used for resolving icon filenames, particularly during --all runs.)
 &nbsp;
     // This error path is used by win32.js if no icon is specified
-<span class="cstat-no" title="statement not covered">    if (!filename) <span class="cstat-no" title="statement not covered">return cb(new Error('No filename specified to normalizeExt'))</span></span>
+<span class="cstat-no" title="statement not covered" >    if (!filename) <span class="cstat-no" title="statement not covered" >return cb(new Error('No filename specified to normalizeExt'))</span></span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">    var ext = path.extname(filename)</span>
-<span class="cstat-no" title="statement not covered">    if (ext !== targetExt) {</span>
-<span class="cstat-no" title="statement not covered">      filename = filename.slice(0, filename.length - ext.length) + targetExt</span>
+<span class="cstat-no" title="statement not covered" >    var ext = path.extname(filename)</span>
+<span class="cstat-no" title="statement not covered" >    if (ext !== targetExt) {</span>
+<span class="cstat-no" title="statement not covered" >      filename = filename.slice(0, filename.length - ext.length) + targetExt</span>
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered">    fs.stat(filename, <span class="fstat-no" title="function not covered">function (err) {</span></span>
-<span class="cstat-no" title="statement not covered">      cb(err, err ? null : filename)</span>
+<span class="cstat-no" title="statement not covered" >    fs.stat(filename, <span class="fstat-no" title="function not covered" >function (err) {</span></span>
+<span class="cstat-no" title="statement not covered" >      cb(err, err ? null : filename)</span>
     })
   },
 &nbsp;
-  rename: <span class="fstat-no" title="function not covered">function rename (basePath, oldName, newName, cb) {</span>
-<span class="cstat-no" title="statement not covered">    debug(`Renaming ${oldName} to ${newName} in ${basePath}`)</span>
-<span class="cstat-no" title="statement not covered">    fs.rename(path.join(basePath, oldName), path.join(basePath, newName), cb)</span>
+  rename: <span class="fstat-no" title="function not covered" >function rename (basePath, oldName, newName, cb) {</span>
+<span class="cstat-no" title="statement not covered" >    debug(`Renaming ${oldName} to ${newName} in ${basePath}`)</span>
+<span class="cstat-no" title="statement not covered" >    fs.rename(path.join(basePath, oldName), path.join(basePath, newName), cb)</span>
   },
   sanitizeAppName: sanitizeAppName,
   warning: warning
 }
 &nbsp;
 &nbsp;</pre></td></tr>
-</tbody></table></pre>
+</table></pre>
 </div>
 <div class="footer">
-    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Tue Apr 11 2017 08:40:41 GMT+0000 (UTC)</div>
+    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Mon Apr 17 2017 11:42:39 GMT+0000 (UTC)</div>
 </div>
-
-
-</body></html>
+</body>
+</html>
