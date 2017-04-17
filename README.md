@@ -1,7 +1,7 @@
 # test coverage for  [electron-packager (v8.6.0)](https://github.com/electron-userland/electron-packager)  [![npm package](https://img.shields.io/npm/v/npmtest-electron-packager.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-electron-packager) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-electron-packager.svg)](https://travis-ci.org/npmtest/node-npmtest-electron-packager)
 #### Package and distribute your Electron app with OS-specific bundles (.app, .exe etc) via JS or CLI
 
-[![NPM](https://nodei.co/npm/electron-packager.png?downloads=true)](https://www.npmjs.com/package/electron-packager)
+[![NPM](https://nodei.co/npm/electron-packager.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/electron-packager)
 
 | git-branch : | [alpha](https://github.com/npmtest/node-npmtest-electron-packager/tree/alpha)|
 |--:|:--|
@@ -9,11 +9,17 @@
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-electron-packager/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-electron-packager/build/test-report.html)|
 | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-electron-packager/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-electron-packager/tree/gh-pages/build)|
 
-[![istanbul-coverage](https://npmtest.github.io/node-npmtest-electron-packager/build/screenCapture.buildCustomOrg.browser.coverage.html.png)](https://npmtest.github.io/node-npmtest-electron-packager/build/coverage.html/index.html)
+- [https://npmtest.github.io/node-npmtest-electron-packager/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-electron-packager/build/coverage.html/index.html)
 
-[![test-report](https://npmtest.github.io/node-npmtest-electron-packager/build/screenCapture.buildCustomOrg.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmtest%252Fnode-npmtest-electron-packager%252Ftmp%252Fbuild%252Ftest-report.html.png)](https://npmtest.github.io/node-npmtest-electron-packager/build/test-report.html)
+[![istanbul-coverage](https://npmtest.github.io/node-npmtest-electron-packager/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fcoverage.lib.html.png)](https://npmtest.github.io/node-npmtest-electron-packager/build/coverage.html/index.html)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-electron-packager/build/screenCapture.buildApidoc.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmdoc%252Fnode-npmdoc-electron-packager%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-electron-packager/build/apidoc.html)
+- [https://npmtest.github.io/node-npmtest-electron-packager/build/test-report.html](https://npmtest.github.io/node-npmtest-electron-packager/build/test-report.html)
+
+[![test-report](https://npmtest.github.io/node-npmtest-electron-packager/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Ftest-report.html.png)](https://npmtest.github.io/node-npmtest-electron-packager/build/test-report.html)
+
+- [https://npmdoc.github.io/node-npmdoc-electron-packager/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-electron-packager/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-electron-packager/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-electron-packager/build/apidoc.html)
 
 ![npmPackageListing](https://npmtest.github.io/node-npmtest-electron-packager/build/screenCapture.npmPackageListing.svg)
 
@@ -101,45 +107,35 @@
     "main": "index.js",
     "maintainers": [
         {
-            "name": "feross",
-            "email": "feross@feross.org"
+            "name": "feross"
         },
         {
-            "name": "jlord",
-            "email": "to.jlord@gmail.com"
+            "name": "jlord"
         },
         {
-            "name": "jsdnxx",
-            "email": "jason@denizac.org"
+            "name": "jsdnxx"
         },
         {
-            "name": "kfranqueiro",
-            "email": "kenneth.franqueiro@gmail.com"
+            "name": "kfranqueiro"
         },
         {
-            "name": "malept",
-            "email": "nodejs.npm.nospam@lazymalevolence.com"
+            "name": "malept"
         },
         {
-            "name": "maxogden",
-            "email": "max@maxogden.com"
+            "name": "maxogden"
         },
         {
-            "name": "sindresorhus",
-            "email": "sindresorhus@gmail.com"
+            "name": "sindresorhus"
         },
         {
-            "name": "stefanbuck",
-            "email": "web@broud.de"
+            "name": "stefanbuck"
         },
         {
-            "name": "zeke",
-            "email": "zeke@sikelianos.com"
+            "name": "zeke"
         }
     ],
     "name": "electron-packager",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/electron-userland/electron-packager.git"
