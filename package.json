@@ -1,6 +1,6 @@
 {
     "author": "kai zhu <kaizhu256@gmail.com>",
-    "description": "test coverage for [electron-packager (v8.6.0)](https://github.com/electron-userland/electron-packager) [![npm package](https://img.shields.io/npm/v/npmtest-electron-packager.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-electron-packager) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-electron-packager.svg)](https://travis-ci.org/npmtest/node-npmtest-electron-packager)",
+    "description": "#### basic test coverage for  [electron-packager (v8.6.0)](https://github.com/electron-userland/electron-packager)  [![npm package](https://img.shields.io/npm/v/npmtest-electron-packager.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-electron-packager) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-electron-packager.svg)](https://travis-ci.org/npmtest/node-npmtest-electron-packager)",
     "devDependencies": {
         "electron-lite": "kaizhu256/node-electron-lite#alpha",
         "electron-packager": "*",

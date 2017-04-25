@@ -1,4 +1,7 @@
-# test coverage for  [electron-packager (v8.6.0)](https://github.com/electron-userland/electron-packager)  [![npm package](https://img.shields.io/npm/v/npmtest-electron-packager.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-electron-packager) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-electron-packager.svg)](https://travis-ci.org/npmtest/node-npmtest-electron-packager)
+# npmtest-electron-packager
+
+#### basic test coverage for  [electron-packager (v8.6.0)](https://github.com/electron-userland/electron-packager)  [![npm package](https://img.shields.io/npm/v/npmtest-electron-packager.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-electron-packager) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-electron-packager.svg)](https://travis-ci.org/npmtest/node-npmtest-electron-packager)
+
 #### Package and distribute your Electron app with OS-specific bundles (.app, .exe etc) via JS or CLI
 
 [![NPM](https://nodei.co/npm/electron-packager.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/electron-packager)
@@ -7,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-electron-packager/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-electron-packager/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-electron-packager/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-electron-packager/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-electron-packager/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-electron-packager/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-electron-packager/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-electron-packager/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-electron-packager/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-electron-packager/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-electron-packager/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-electron-packager/build/coverage.html/index.html)
 
